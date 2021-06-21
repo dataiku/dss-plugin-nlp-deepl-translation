@@ -1,0 +1,345 @@
+{
+  "meta": {
+    "label": "DeepL Translation",
+    "displayOrderRank": 1,
+    "description": "Translate a text column to another language with  [DeepL Translation](https://www.deepl.com/docs-api/translating-text/request/)",
+    "icon": "icon-cloud"
+  },
+  "kind": "PYTHON",
+  "selectableFromDataset": "input_dataset",
+  "inputRoles": [
+    {
+      "name": "input_dataset",
+      "label": "Input Dataset",
+      "description": "Dataset with a text column to translate",
+      "arity": "UNARY",
+      "required": true,
+      "acceptsDataset": true
+    }
+  ],
+  "outputRoles": [
+    {
+      "name": "output_dataset",
+      "label": "Output dataset",
+      "description": "Dataset with text translated to another language",
+      "arity": "UNARY",
+      "required": true,
+      "acceptsDataset": true
+    }
+  ],
+  "params": [
+    {
+      "name": "separator_input",
+      "label": "Input parameters",
+      "type": "SEPARATOR"
+    },
+    {
+      "name": "text_column",
+      "label": "Text column",
+      "type": "COLUMN",
+      "columnRole": "input_dataset",
+      "mandatory": true,
+      "allowedColumnTypes": [
+        "string"
+      ]
+    },
+    {
+      "name": "source_language",
+      "label": "Source language",
+      "description": "Language to translate from",
+      "type": "SELECT",
+      "mandatory": true,
+      "selectChoices": [
+        {
+          "value": "auto",
+          "label": "Auto-detect"
+        },
+        {
+          "label": "Bulgarian [BG]",
+          "value": "BG"
+        },
+        {
+          "label": "Czech [CS]",
+          "value": "CS"
+        },
+        {
+          "label": "Danish [DA]",
+          "value": "DA"
+        },
+        {
+          "label": "German [DE]",
+          "value": "DE"
+        },
+        {
+          "label": "Greek [EL]",
+          "value": "EL"
+        },
+        {
+          "label": "English [EN]",
+          "value": "EN"
+        },
+        {
+          "label": "Spanish [ES]",
+          "value": "ES"
+        },
+        {
+          "label": "Estonian [ET]",
+          "value": "ET"
+        },
+        {
+          "label": "Finnish [FI]",
+          "value": "FI"
+        },
+        {
+          "label": "French [FR]",
+          "value": "FR"
+        },
+        {
+          "label": "Hungarian [HU]",
+          "value": "HU"
+        },
+        {
+          "label": "Italian [IT]",
+          "value": "IT"
+        },
+        {
+          "label": "Japanese [JA]",
+          "value": "JA"
+        },
+        {
+          "label": "Lithuanian [LT]",
+          "value": "LT"
+        },
+        {
+          "label": "Latvian [LV]",
+          "value": "LV"
+        },
+        {
+          "label": "Dutch [NL]",
+          "value": "NL"
+        },
+        {
+          "label": "Polish [PL]",
+          "value": "PL"
+        },
+        {
+          "label": "Portuguese (all Portuguese varieties mixed) [PT]",
+          "value": "PT"
+        },
+        {
+          "label": "Romanian [RO]",
+          "value": "RO"
+        },
+        {
+          "label": "Russian [RU]",
+          "value": "RU"
+        },
+        {
+          "label": "Slovak [SK]",
+          "value": "SK"
+        },
+        {
+          "label": "Slovenian [SL]",
+          "value": "SL"
+        },
+        {
+          "label": "Swedish [SV]",
+          "value": "SV"
+        },
+        {
+          "label": "Chinese [ZH]",
+          "value": "ZH"
+        }
+      ],
+      "defaultValue": "auto"
+    },
+    {
+      "name": "target_language",
+      "label": "Target language",
+      "description": "Language to translate to",
+      "type": "SELECT",
+      "mandatory": true,
+      "selectChoices": [
+        {
+          "label": "Bulgarian [BG]",
+          "value": "BG"
+        },
+        {
+          "label": "Czech [CS]",
+          "value": "CS"
+        },
+        {
+          "label": "Danish [DA]",
+          "value": "DA"
+        },
+        {
+          "label": "German [DE]",
+          "value": "DE"
+        },
+        {
+          "label": "Greek [EL]",
+          "value": "EL"
+        },
+        {
+          "label": "English (British) [EN-GB]",
+          "value": "EN-GB"
+        },
+        {
+          "label": "English (American) [EN-US]",
+          "value": "EN-US"
+        },
+        {
+          "label": "Spanish [ES]",
+          "value": "ES"
+        },
+        {
+          "label": "Estonian [ET]",
+          "value": "ET"
+        },
+        {
+          "label": "Finnish [FI]",
+          "value": "FI"
+        },
+        {
+          "label": "French [FR]",
+          "value": "FR"
+        },
+        {
+          "label": "Hungarian [HU]",
+          "value": "HU"
+        },
+        {
+          "label": "Italian [IT]",
+          "value": "IT"
+        },
+        {
+          "label": "Japanese [JA]",
+          "value": "JA"
+        },
+        {
+          "label": "Lithuanian [LT]",
+          "value": "LT"
+        },
+        {
+          "label": "Latvian [LV]",
+          "value": "LV"
+        },
+        {
+          "label": "Dutch [NL]",
+          "value": "NL"
+        },
+        {
+          "label": "Polish [PL]",
+          "value": "PL"
+        },
+        {
+          "label": "Portuguese (all Portuguese varieties excluding Brazilian) [PT-PT]",
+          "value": "PT-PT"
+        },
+        {
+          "label": "Portuguese (Brazilian) [PT-BR]",
+          "value": "PT-BR"
+        },
+        {
+          "label": "Romanian [RO]",
+          "value": "RO"
+        },
+        {
+          "label": "Russian [RU]",
+          "value": "RU"
+        },
+        {
+          "label": "Slovak [SK]",
+          "value": "SK"
+        },
+        {
+          "label": "Slovenian [SL]",
+          "value": "SL"
+        },
+        {
+          "label": "Swedish [SV]",
+          "value": "SV"
+        },
+        {
+          "label": "Chinese [ZH]",
+          "value": "ZH"
+        }
+      ],
+      "defaultValue": "EN"
+    },
+    {
+      "name": "split_sentences",
+      "label": "Split Sentences",
+      "description": "Whether the translation engine should first split the input into sentences.",
+      "type": "SELECT",
+      "mandatory": false,
+      "selectChoices": [
+        {
+          "value": "0",
+          "label": "Splits: None"
+        },
+        {
+          "value": "nonewlines",
+          "label": "Splits: Interpunction"
+        },
+        {
+          "value": "1",
+          "label": "Splits: Interpunction, Newlines"
+        }
+      ],
+      "defaultValue": "1"
+    },
+    {
+      "name": "preserve_formatting",
+      "label": "Preserve Formatting",
+      "description": "Whether the translation engine should respect the original formatting.",
+      "type": "BOOLEAN",
+      "defaultValue": false,
+      "mandatory": false
+    },
+    {
+      "name": "formality",
+      "label": "Formality",
+      "description": "Whether the translated text should lean towards formal or informal language.",
+      "type": "SELECT",
+      "mandatory": false,
+      "visibilityCondition": "['DE', 'FR', 'IT', 'ES', 'NL', 'PL', 'PT-PT', 'PT-BR', 'RU'].includes(model.target_language)",
+      "selectChoices": [
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "less",
+          "label": "less"
+        },
+        {
+          "value": "more",
+          "label": "more"
+        }
+      ],
+      "defaultValue": "default"
+    },
+    {
+      "name": "separator_configuration",
+      "label": "Configuration",
+      "type": "SEPARATOR"
+    },
+    {
+      "name": "api_configuration_preset",
+      "label": "API configuration preset",
+      "type": "PRESET",
+      "parameterSetId": "api-configuration",
+      "mandatory": true
+    },
+    {
+      "name": "fail_on_error",
+      "label": "Fail on error",
+      "type": "BOOLEAN",
+      "description": "Abort execution if any issues are raised. By default, errors will be logged per record in the output.",
+      "defaultValue": false,
+      "mandatory": true
+    }
+  ],
+  "resourceKeys": []
+}
