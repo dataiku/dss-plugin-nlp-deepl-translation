@@ -37,7 +37,7 @@ split_sentences = get_recipe_config().get("split_sentences", "1")
 preserve_formatting = str(int(get_recipe_config().get("preserve_formatting", False)))
 formality = get_recipe_config().get("formality", "default")
 # If one selects e.g. less formal first and then switches the language DSS still saves the less formal
-# setting, so we change it manually to default here if it it's not supported for the language
+# setting, so we change it manually to default here if formality is not supported for the language
 if target_language not in formality_support:
     formality = "default"
 
