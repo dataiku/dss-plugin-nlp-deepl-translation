@@ -34,6 +34,7 @@ text_column = get_recipe_config().get("text_column")
 target_language = get_recipe_config().get("target_language", "")
 source_language = get_recipe_config().get("source_language", "").replace("auto", "")
 split_sentences = get_recipe_config().get("split_sentences", "1")
+# DeepL expects "1" or "0" for formatting so we do False > 0 > "0"
 preserve_formatting = str(int(get_recipe_config().get("preserve_formatting", False)))
 formality = get_recipe_config().get("formality", "default")
 # If one selects e.g. less formal first and then switches the language DSS still saves the less formal
