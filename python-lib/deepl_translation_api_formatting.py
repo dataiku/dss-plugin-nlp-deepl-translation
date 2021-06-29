@@ -36,9 +36,9 @@ LANGUAGE_CODE_LABELS = {
     "LV": "Latvian",
     "NL": "Dutch",
     "PL": "Polish",
-    "PT": "Portuguese (all Portuguese varieties mixed)",
+    "PT": "Portuguese",
     "PT-BR": "Portuguese (Brazilian)",
-    "PT-PT": "Portuguese (all Portuguese varieties excluding Brazilian Portuguese)",
+    "PT-PT": "Portuguese (except Brazilian)",
     "RO": "Romanian",
     "RU": "Russian",
     "SK": "Slovak",
@@ -133,8 +133,8 @@ class TranslationAPIFormatter(GenericAPIFormatter):
             The response takes the form (https://www.deepl.com/docs-api/translating-text/request/):
             {
                 "translations": [{
-                "detected_source_language":"EN",
-                "text":"Der Tisch ist grün. Der Stuhl ist schwarz."
+                    "detected_source_language":"EN",
+                    "text":"Der Tisch ist grün. Der Stuhl ist schwarz."
                 }]
             }
 

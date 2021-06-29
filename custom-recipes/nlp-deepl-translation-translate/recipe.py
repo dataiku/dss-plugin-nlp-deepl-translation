@@ -81,7 +81,7 @@ def call_translation_api(
     Calls DeepL Translation API. No Source language means Autodetect.
     """
     text = row[text_column]
-    if not isinstance(text, str) or str(text).strip() == "":
+    if not isinstance(text, str) or text.strip() == "":
         return json.dumps({})
     else:
         response = client.translate(
