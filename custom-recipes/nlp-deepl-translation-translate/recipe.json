@@ -123,7 +123,7 @@
           "value": "PL"
         },
         {
-          "label": "Portuguese (all Portuguese varieties mixed) [PT]",
+          "label": "Portuguese [PT]",
           "value": "PT"
         },
         {
@@ -233,7 +233,7 @@
           "value": "PL"
         },
         {
-          "label": "Portuguese (all Portuguese varieties excluding Brazilian) [PT-PT]",
+          "label": "Portuguese (except Brazilian) [PT-PT]",
           "value": "PT-PT"
         },
         {
