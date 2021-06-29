@@ -133,8 +133,8 @@ class TranslationAPIFormatter(GenericAPIFormatter):
             The response takes the form (https://www.deepl.com/docs-api/translating-text/request/):
             {
                 "translations": [{
-                "detected_source_language":"EN",
-                "text":"Der Tisch ist grün. Der Stuhl ist schwarz."
+                    "detected_source_language":"EN",
+                    "text":"Der Tisch ist grün. Der Stuhl ist schwarz."
                 }]
             }
 
