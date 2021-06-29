@@ -4,6 +4,7 @@
 import json
 import logging
 import re
+from typing import AnyStr
 
 import requests
 
@@ -41,17 +42,34 @@ class DeepLClient:
 
     def translate(
         self,
-        text,
-        target_language,
-        source_language=None,
-        split_sentences="1",
-        preserve_formatting="0",
-        formality="default",
-    ):
+        text: str,
+        target_language: str,
+        source_language: str = None,
+        split_sentences: str = "1",
+        preserve_formatting: str = "0",
+        formality: str = "default",
+    ) -> str:
         """
         Translates text.
+        For detailed parameter information also refer to: https://www.deepl.com/docs-api/translating-text/request/
 
-        For detailed parameter information refer to: https://www.deepl.com/docs-api/translating-text/request/
+        Args:
+            text: UTF8-encoded plain text to be translated
+            target_language: Code of the language into which the text should be translated
+            source_language: Code of the language of the text to be translated
+            split_sentences: Whether the translation engine should first split the input into sentences.
+                Enabled by default
+            preserve_formatting: Whether the translation engine should respect the original formatting.
+                Disabled by default.
+            Formality: Whether the translated text should lean towards formal or informal language.
+                Only supported for few languages.
+
+        Returns:
+            response.text: JSON string with the API response.
+
+        Raises:
+            HTTPError: An error occured accessing the API.
+
         """
         response = requests.post(
             url=self.deepl_url,
