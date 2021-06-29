@@ -69,7 +69,6 @@ class DeepLClient:
 
         Raises:
             HTTPError: An error occured accessing the API.
-
         """
         response = requests.post(
             url=self.deepl_url,

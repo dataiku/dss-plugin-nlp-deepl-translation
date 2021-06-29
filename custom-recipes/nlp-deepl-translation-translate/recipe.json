@@ -270,7 +270,7 @@
     {
       "name": "split_sentences",
       "label": "Split Sentences",
-      "description": "Whether the translation engine should first split the input into sentences.",
+      "description": "If DeepL should split the input into sentences (Won't affect formatting).",
       "type": "SELECT",
       "mandatory": false,
       "selectChoices": [
