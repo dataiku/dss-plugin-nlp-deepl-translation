@@ -32,6 +32,7 @@ if api_configuration_preset is None or api_configuration_preset == {}:
 # Recipe parameters
 text_column = get_recipe_config().get("text_column")
 target_language = get_recipe_config().get("target_language", "")
+# For auto-translate DeepL takes an empty string for the source language
 source_language = get_recipe_config().get("source_language", "").replace("auto", "")
 split_sentences = get_recipe_config().get("split_sentences", "1")
 # DeepL expects "1" or "0" for formatting so we do False > 0 > "0"
