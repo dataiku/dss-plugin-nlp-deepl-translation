@@ -35,8 +35,7 @@ target_language = get_recipe_config().get("target_language", "")
 # For auto-translate DeepL takes an empty string for the source language
 source_language = get_recipe_config().get("source_language", "").replace("auto", "")
 split_sentences = get_recipe_config().get("split_sentences", "1")
-# DeepL expects "1" or "0" for formatting so we do False > 0 > "0"
-preserve_formatting = str(int(get_recipe_config().get("preserve_formatting", False)))
+preserve_formatting = "1" if get_recipe_config().get("preserve_formatting", False) else "0"
 formality = get_recipe_config().get("formality", "default")
 # If one selects e.g. less formal first and then switches the language DSS still saves the less formal
 # setting, so we change it manually to default here if formality is not supported for the language
