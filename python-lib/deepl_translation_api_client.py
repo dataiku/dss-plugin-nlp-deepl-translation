@@ -82,8 +82,7 @@ class DeepLClient:
                 "formality": formality,
             },
         )
-
-        if "translations" in response.text:
+        if (response.status_code == requests.codes.ok) and ("translations" in response.text):
             # Returns text from the response object which is a json string, so no need to dump it into json anymore
             return response.text
         else:
