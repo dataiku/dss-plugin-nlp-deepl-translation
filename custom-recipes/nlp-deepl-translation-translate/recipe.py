@@ -7,8 +7,8 @@ import dataiku
 from dataiku.customrecipe import get_input_names_for_role
 from dataiku.customrecipe import get_output_names_for_role
 from dataiku.customrecipe import get_recipe_config
-from dkulib.dku_io_utils import set_column_descriptions
-from dkulib.parallelizer import DataFrameParallelizer
+from dkulib.core.dku_io_utils import set_column_descriptions
+from dkulib.core.parallelizer import DataFrameParallelizer
 
 from deepl_translation_api_client import API_EXCEPTIONS
 from deepl_translation_api_client import DeepLClient
