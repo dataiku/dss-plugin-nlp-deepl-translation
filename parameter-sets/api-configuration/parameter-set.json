@@ -1,0 +1,82 @@
+{
+    "meta": {
+        "label": "API configuration",
+        "description": "Define presets for users to call the API with specific credentials, quota and parallelization parameters",
+        "icon": "icon-cloud"
+    },
+    "defaultDefinableAtProjectLevel": true,
+    "defaultDefinableInline": false,
+    "definableInline": false,
+    "params": [
+        {
+            "name": "separator_authentification",
+            "label": "Authentification",
+            "type": "SEPARATOR",
+            "description": "Please refer to the DeepL documentation: https://www.deepl.com/docs-api/accessing-the-api/"
+        },
+        {
+            "name": "deepl_api_key",
+            "label": "DeepL API key",
+            "description": "DeepL API Key as a string.",
+            "type": "PASSWORD",
+            "mandatory": true
+        },
+        {
+            "name": "deepl_url",
+            "label": "DeepL URL",
+            "description": "Select either the DeepL Free or DeepL Pro URL depending on your subscription.",
+            "type": "SELECT",
+            "mandatory": true,
+            "selectChoices": [
+              {
+                "label": "DeepL Free [https://api-free.deepl.com/v2/translate] ",
+                "value": "https://api-free.deepl.com/v2/translate"
+              },
+              {
+                "label": "DeepL Pro [https://api.deepl.com/v2/translate]",
+                "value": "https://api.deepl.com/v2/translate"
+              }
+            ]
+        },
+        {
+            "name": "separator_performance",
+            "label": "Parallelization",
+            "type": "SEPARATOR"
+        },
+        {
+            "name": "parallel_workers",
+            "label": "Concurrency",
+            "description": "Number of threads calling the API in parallel (max 100). Increase to speed-up computation.",
+            "type": "INT",
+            "mandatory": true,
+            "defaultValue": 4,
+            "minI": 1,
+            "maxI": 100
+        },
+        {
+            "name": "separator_api_quota",
+            "label": "Attempts",
+            "type": "SEPARATOR"
+        },
+        {
+            "name": "max_attempts",
+            "label": "Maximum Attempts",
+            "description": "Maximum number of retry attempts when an API request fails.",
+            "type": "INT",
+            "mandatory": true,
+            "defaultValue": 3,
+            "minI": 1,
+            "maxI": 100
+        },
+        {
+            "name": "wait_interval",
+            "label": "Waiting Interval",
+            "description": "Seconds to wait between reattempting in case of failure.",
+            "type": "INT",
+            "mandatory": true,
+            "defaultValue": 5,
+            "minI": 1,
+            "maxI": 60
+        }
+    ]
+}
