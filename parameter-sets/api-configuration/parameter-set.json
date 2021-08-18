@@ -2,7 +2,7 @@
     "meta": {
         "label": "API configuration",
         "description": "Define presets for users to call the API with specific credentials, quota and parallelization parameters",
-        "icon": "icon-cloud"
+        "icon": "icon-dku-deepl icon-cloud"
     },
     "defaultDefinableAtProjectLevel": true,
     "defaultDefinableInline": false,
@@ -28,14 +28,14 @@
             "type": "SELECT",
             "mandatory": true,
             "selectChoices": [
-              {
-                "label": "DeepL Free [https://api-free.deepl.com/v2/translate] ",
-                "value": "https://api-free.deepl.com/v2/translate"
-              },
-              {
-                "label": "DeepL Pro [https://api.deepl.com/v2/translate]",
-                "value": "https://api.deepl.com/v2/translate"
-              }
+                {
+                    "label": "DeepL Free [https://api-free.deepl.com/v2/translate] ",
+                    "value": "https://api-free.deepl.com/v2/translate"
+                },
+                {
+                    "label": "DeepL Pro [https://api.deepl.com/v2/translate]",
+                    "value": "https://api.deepl.com/v2/translate"
+                }
             ]
         },
         {

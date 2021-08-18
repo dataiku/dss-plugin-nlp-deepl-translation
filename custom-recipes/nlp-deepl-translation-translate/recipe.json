@@ -3,7 +3,7 @@
     "label": "DeepL Translation",
     "displayOrderRank": 1,
     "description": "Translate a text column to another language with  [DeepL Translation](https://www.deepl.com/docs-api/translating-text/request/)",
-    "icon": "icon-cloud"
+    "icon": "icon-dku-deepl icon-cloud"
   },
   "kind": "PYTHON",
   "selectableFromDataset": "input_dataset",
