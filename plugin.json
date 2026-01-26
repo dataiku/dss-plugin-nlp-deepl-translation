@@ -1,6 +1,6 @@
 {
     "id": "nlp-deepl-translation",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "meta": {
         "label": "DeepL Translation",
         "category": "Natural Language Processing",
