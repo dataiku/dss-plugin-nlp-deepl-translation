@@ -72,10 +72,12 @@ class DeepLClient:
         """
         response = requests.post(
             url=self.deepl_url,
+            headers={
+                "Authorization": "DeepL-Auth-Key {}".format(self.api_key),
+            },
             data={
                 "source_lang": source_language,
                 "target_lang": target_language,
-                "auth_key": self.api_key,
                 "text": text,
                 "split_sentences": split_sentences,
                 "preserve_formatting": preserve_formatting,
