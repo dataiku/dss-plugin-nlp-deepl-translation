@@ -3,7 +3,7 @@
     "version": "1.0.2",
     "meta": {
         "label": "DeepL Translation",
-        "category": "Natural Language Processing",
+        "category": "NLP",
         "description": "Use DeepL to translate text",
         "author": "Dataiku (Niklas MUENNIGHOFF, Mehdi HAMOUMI)",
         "icon": "icon-dku-deepl icon-cloud",
@@ -11,8 +11,6 @@
         "supportLevel": "NOT_SUPPORTED",
         "url": "https://www.dataiku.com/product/plugins/nlp-deepl-translation/",
         "tags": [
-            "DeepL",
-            "Cloud",
             "NLP"
         ]
     }
