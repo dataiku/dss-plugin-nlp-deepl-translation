@@ -21,8 +21,12 @@ from retry import retry
 # SETUP
 # ==============================================================================
 
-# Languages with formality support from DeepL, see https://www.deepl.com/docs-api/translating-text/request/
-formality_support = {"DE", "FR", "IT", "ES", "NL", "PL", "PT-PT", "PT-BR", "RU"}
+# Languages with formality support from DeepL, see https://developers.deepl.com/docs/getting-started/supported-languages
+formality_support = {
+    "AR", "BG", "CS", "DA", "DE", "EL", "EN-GB", "EN-US", "ES", "ET", "FI", "FR",
+    "HE", "HU", "ID", "IT", "JA", "KO", "LT", "LV", "NB", "NL", "PL", "PT-BR",
+    "PT-PT", "RO", "RU", "SK", "SL", "SV", "TR", "UK", "VI", "ZH-HANS", "ZH-HANT",
+}
 
 api_configuration_preset = get_recipe_config().get("api_configuration_preset")
 if api_configuration_preset is None or api_configuration_preset == {}:
