@@ -1,11 +1,11 @@
 {
     "id": "nlp-deepl-translation",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "meta": {
         "label": "DeepL Translation",
         "category": "NLP",
         "description": "Use DeepL to translate text",
-        "author": "Dataiku (Niklas MUENNIGHOFF, Mehdi HAMOUMI)",
+        "author": "Dataiku",
         "icon": "icon-dku-deepl icon-cloud",
         "licenseInfo": "Apache Software License",
         "supportLevel": "NOT_SUPPORTED",
