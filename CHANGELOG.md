@@ -1,6 +1,6 @@
 # Changelog
 
-## [Version 1.1.0](https://github.com/dataiku/dss-plugin-deepl-translation/releases/tag/v1.0.2) - Support release - 2026-01
+## [Version 1.1.0](https://github.com/dataiku/dss-plugin-deepl-translation/releases/tag/v1.1.0) - Support release - 2026-01
 
 - ✨ Support many more languages both as source and target of translations
 - ✨ Support python 3.12, 3.13 and 3.14
