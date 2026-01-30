@@ -50,106 +50,121 @@
       "type": "SELECT",
       "mandatory": true,
       "selectChoices": [
-        {
-          "value": "auto",
-          "label": "Auto-detect"
-        },
-        {
-          "label": "Bulgarian [BG]",
-          "value": "BG"
-        },
-        {
-          "label": "Czech [CS]",
-          "value": "CS"
-        },
-        {
-          "label": "Danish [DA]",
-          "value": "DA"
-        },
-        {
-          "label": "German [DE]",
-          "value": "DE"
-        },
-        {
-          "label": "Greek [EL]",
-          "value": "EL"
-        },
-        {
-          "label": "English [EN]",
-          "value": "EN"
-        },
-        {
-          "label": "Spanish [ES]",
-          "value": "ES"
-        },
-        {
-          "label": "Estonian [ET]",
-          "value": "ET"
-        },
-        {
-          "label": "Finnish [FI]",
-          "value": "FI"
-        },
-        {
-          "label": "French [FR]",
-          "value": "FR"
-        },
-        {
-          "label": "Hungarian [HU]",
-          "value": "HU"
-        },
-        {
-          "label": "Italian [IT]",
-          "value": "IT"
-        },
-        {
-          "label": "Japanese [JA]",
-          "value": "JA"
-        },
-        {
-          "label": "Lithuanian [LT]",
-          "value": "LT"
-        },
-        {
-          "label": "Latvian [LV]",
-          "value": "LV"
-        },
-        {
-          "label": "Dutch [NL]",
-          "value": "NL"
-        },
-        {
-          "label": "Polish [PL]",
-          "value": "PL"
-        },
-        {
-          "label": "Portuguese [PT]",
-          "value": "PT"
-        },
-        {
-          "label": "Romanian [RO]",
-          "value": "RO"
-        },
-        {
-          "label": "Russian [RU]",
-          "value": "RU"
-        },
-        {
-          "label": "Slovak [SK]",
-          "value": "SK"
-        },
-        {
-          "label": "Slovenian [SL]",
-          "value": "SL"
-        },
-        {
-          "label": "Swedish [SV]",
-          "value": "SV"
-        },
-        {
-          "label": "Chinese [ZH]",
-          "value": "ZH"
-        }
+        { "value": "auto", "label": "Auto-detect" },
+        { "value": "ACE", "label": "Acehnese [ACE]" },
+        { "value": "AF", "label": "Afrikaans [AF]" },
+        { "value": "SQ", "label": "Albanian [SQ]" },
+        { "value": "AR", "label": "Arabic [AR]" },
+        { "value": "AN", "label": "Aragonese [AN]" },
+        { "value": "HY", "label": "Armenian [HY]" },
+        { "value": "AS", "label": "Assamese [AS]" },
+        { "value": "AY", "label": "Aymara [AY]" },
+        { "value": "AZ", "label": "Azerbaijani [AZ]" },
+        { "value": "BA", "label": "Bashkir [BA]" },
+        { "value": "EU", "label": "Basque [EU]" },
+        { "value": "BE", "label": "Belarusian [BE]" },
+        { "value": "BN", "label": "Bengali [BN]" },
+        { "value": "BHO", "label": "Bhojpuri [BHO]" },
+        { "value": "BS", "label": "Bosnian [BS]" },
+        { "value": "BR", "label": "Breton [BR]" },
+        { "value": "BG", "label": "Bulgarian [BG]" },
+        { "value": "MY", "label": "Burmese [MY]" },
+        { "value": "YUE", "label": "Cantonese [YUE]" },
+        { "value": "CA", "label": "Catalan [CA]" },
+        { "value": "CEB", "label": "Cebuano [CEB]" },
+        { "value": "ZH", "label": "Chinese [ZH]" },
+        { "value": "HR", "label": "Croatian [HR]" },
+        { "value": "CS", "label": "Czech [CS]" },
+        { "value": "DA", "label": "Danish [DA]" },
+        { "value": "PRS", "label": "Dari [PRS]" },
+        { "value": "NL", "label": "Dutch [NL]" },
+        { "value": "EN", "label": "English [EN]" },
+        { "value": "EO", "label": "Esperanto [EO]" },
+        { "value": "ET", "label": "Estonian [ET]" },
+        { "value": "FI", "label": "Finnish [FI]" },
+        { "value": "FR", "label": "French [FR]" },
+        { "value": "GL", "label": "Galician [GL]" },
+        { "value": "KA", "label": "Georgian [KA]" },
+        { "value": "DE", "label": "German [DE]" },
+        { "value": "GOM", "label": "Goan Konkani [GOM]" },
+        { "value": "EL", "label": "Greek [EL]" },
+        { "value": "GN", "label": "Guarani [GN]" },
+        { "value": "GU", "label": "Gujarati [GU]" },
+        { "value": "HT", "label": "Haitian Creole [HT]" },
+        { "value": "HA", "label": "Hausa [HA]" },
+        { "value": "HE", "label": "Hebrew [HE]" },
+        { "value": "HI", "label": "Hindi [HI]" },
+        { "value": "HU", "label": "Hungarian [HU]" },
+        { "value": "IS", "label": "Icelandic [IS]" },
+        { "value": "IG", "label": "Igbo [IG]" },
+        { "value": "ID", "label": "Indonesian [ID]" },
+        { "value": "GA", "label": "Irish [GA]" },
+        { "value": "IT", "label": "Italian [IT]" },
+        { "value": "JA", "label": "Japanese [JA]" },
+        { "value": "JV", "label": "Javanese [JV]" },
+        { "value": "KK", "label": "Kazakh [KK]" },
+        { "value": "KO", "label": "Korean [KO]" },
+        { "value": "CKB", "label": "Kurdish (Central) [CKB]" },
+        { "value": "KMR", "label": "Kurdish (Northern) [KMR]" },
+        { "value": "KY", "label": "Kyrgyz [KY]" },
+        { "value": "LA", "label": "Latin [LA]" },
+        { "value": "LV", "label": "Latvian [LV]" },
+        { "value": "LN", "label": "Lingala [LN]" },
+        { "value": "LT", "label": "Lithuanian [LT]" },
+        { "value": "LMO", "label": "Lombard [LMO]" },
+        { "value": "LB", "label": "Luxembourgish [LB]" },
+        { "value": "MK", "label": "Macedonian [MK]" },
+        { "value": "MAI", "label": "Maithili [MAI]" },
+        { "value": "MG", "label": "Malagasy [MG]" },
+        { "value": "MS", "label": "Malay [MS]" },
+        { "value": "ML", "label": "Malayalam [ML]" },
+        { "value": "MT", "label": "Maltese [MT]" },
+        { "value": "MI", "label": "Maori [MI]" },
+        { "value": "MR", "label": "Marathi [MR]" },
+        { "value": "MN", "label": "Mongolian [MN]" },
+        { "value": "NE", "label": "Nepali [NE]" },
+        { "value": "NB", "label": "Norwegian Bokmål [NB]" },
+        { "value": "OC", "label": "Occitan [OC]" },
+        { "value": "OM", "label": "Oromo [OM]" },
+        { "value": "PAM", "label": "Pampanga [PAM]" },
+        { "value": "PAG", "label": "Pangasinan [PAG]" },
+        { "value": "PS", "label": "Pashto [PS]" },
+        { "value": "FA", "label": "Persian [FA]" },
+        { "value": "PL", "label": "Polish [PL]" },
+        { "value": "PT", "label": "Portuguese [PT]" },
+        { "value": "PA", "label": "Punjabi [PA]" },
+        { "value": "QU", "label": "Quechua [QU]" },
+        { "value": "RO", "label": "Romanian [RO]" },
+        { "value": "RU", "label": "Russian [RU]" },
+        { "value": "SA", "label": "Sanskrit [SA]" },
+        { "value": "SR", "label": "Serbian [SR]" },
+        { "value": "SCN", "label": "Sicilian [SCN]" },
+        { "value": "SK", "label": "Slovak [SK]" },
+        { "value": "SL", "label": "Slovenian [SL]" },
+        { "value": "ST", "label": "Southern Sotho [ST]" },
+        { "value": "ES", "label": "Spanish [ES]" },
+        { "value": "SU", "label": "Sundanese [SU]" },
+        { "value": "SW", "label": "Swahili [SW]" },
+        { "value": "SV", "label": "Swedish [SV]" },
+        { "value": "TL", "label": "Tagalog [TL]" },
+        { "value": "TG", "label": "Tajik [TG]" },
+        { "value": "TA", "label": "Tamil [TA]" },
+        { "value": "TT", "label": "Tatar [TT]" },
+        { "value": "TE", "label": "Telugu [TE]" },
+        { "value": "TH", "label": "Thai [TH]" },
+        { "value": "TS", "label": "Tsonga [TS]" },
+        { "value": "TN", "label": "Tswana [TN]" },
+        { "value": "TR", "label": "Turkish [TR]" },
+        { "value": "TK", "label": "Turkmen [TK]" },
+        { "value": "UK", "label": "Ukrainian [UK]" },
+        { "value": "UR", "label": "Urdu [UR]" },
+        { "value": "UZ", "label": "Uzbek [UZ]" },
+        { "value": "VI", "label": "Vietnamese [VI]" },
+        { "value": "CY", "label": "Welsh [CY]" },
+        { "value": "WO", "label": "Wolof [WO]" },
+        { "value": "XH", "label": "Xhosa [XH]" },
+        { "value": "YI", "label": "Yiddish [YI]" },
+        { "value": "ZU", "label": "Zulu [ZU]" }
       ],
       "defaultValue": "auto"
     },
@@ -160,112 +175,127 @@
       "type": "SELECT",
       "mandatory": true,
       "selectChoices": [
-        {
-          "label": "Bulgarian [BG]",
-          "value": "BG"
-        },
-        {
-          "label": "Czech [CS]",
-          "value": "CS"
-        },
-        {
-          "label": "Danish [DA]",
-          "value": "DA"
-        },
-        {
-          "label": "German [DE]",
-          "value": "DE"
-        },
-        {
-          "label": "Greek [EL]",
-          "value": "EL"
-        },
-        {
-          "label": "English (British) [EN-GB]",
-          "value": "EN-GB"
-        },
-        {
-          "label": "English (American) [EN-US]",
-          "value": "EN-US"
-        },
-        {
-          "label": "Spanish [ES]",
-          "value": "ES"
-        },
-        {
-          "label": "Estonian [ET]",
-          "value": "ET"
-        },
-        {
-          "label": "Finnish [FI]",
-          "value": "FI"
-        },
-        {
-          "label": "French [FR]",
-          "value": "FR"
-        },
-        {
-          "label": "Hungarian [HU]",
-          "value": "HU"
-        },
-        {
-          "label": "Italian [IT]",
-          "value": "IT"
-        },
-        {
-          "label": "Japanese [JA]",
-          "value": "JA"
-        },
-        {
-          "label": "Lithuanian [LT]",
-          "value": "LT"
-        },
-        {
-          "label": "Latvian [LV]",
-          "value": "LV"
-        },
-        {
-          "label": "Dutch [NL]",
-          "value": "NL"
-        },
-        {
-          "label": "Polish [PL]",
-          "value": "PL"
-        },
-        {
-          "label": "Portuguese (except Brazilian) [PT-PT]",
-          "value": "PT-PT"
-        },
-        {
-          "label": "Portuguese (Brazilian) [PT-BR]",
-          "value": "PT-BR"
-        },
-        {
-          "label": "Romanian [RO]",
-          "value": "RO"
-        },
-        {
-          "label": "Russian [RU]",
-          "value": "RU"
-        },
-        {
-          "label": "Slovak [SK]",
-          "value": "SK"
-        },
-        {
-          "label": "Slovenian [SL]",
-          "value": "SL"
-        },
-        {
-          "label": "Swedish [SV]",
-          "value": "SV"
-        },
-        {
-          "label": "Chinese [ZH]",
-          "value": "ZH"
-        }
+        { "value": "ACE", "label": "Acehnese [ACE]" },
+        { "value": "AF", "label": "Afrikaans [AF]" },
+        { "value": "SQ", "label": "Albanian [SQ]" },
+        { "value": "AR", "label": "Arabic [AR]" },
+        { "value": "AN", "label": "Aragonese [AN]" },
+        { "value": "HY", "label": "Armenian [HY]" },
+        { "value": "AS", "label": "Assamese [AS]" },
+        { "value": "AY", "label": "Aymara [AY]" },
+        { "value": "AZ", "label": "Azerbaijani [AZ]" },
+        { "value": "BA", "label": "Bashkir [BA]" },
+        { "value": "EU", "label": "Basque [EU]" },
+        { "value": "BE", "label": "Belarusian [BE]" },
+        { "value": "BN", "label": "Bengali [BN]" },
+        { "value": "BHO", "label": "Bhojpuri [BHO]" },
+        { "value": "BS", "label": "Bosnian [BS]" },
+        { "value": "BR", "label": "Breton [BR]" },
+        { "value": "BG", "label": "Bulgarian [BG]" },
+        { "value": "MY", "label": "Burmese [MY]" },
+        { "value": "YUE", "label": "Cantonese [YUE]" },
+        { "value": "CA", "label": "Catalan [CA]" },
+        { "value": "CEB", "label": "Cebuano [CEB]" },
+        { "value": "ZH", "label": "Chinese [ZH]" },
+        { "value": "ZH-HANS", "label": "Chinese (Simplified) [ZH-HANS]" },
+        { "value": "ZH-HANT", "label": "Chinese (Traditional) [ZH-HANT]" },
+        { "value": "HR", "label": "Croatian [HR]" },
+        { "value": "CS", "label": "Czech [CS]" },
+        { "value": "DA", "label": "Danish [DA]" },
+        { "value": "PRS", "label": "Dari [PRS]" },
+        { "value": "NL", "label": "Dutch [NL]" },
+        { "value": "EN-GB", "label": "English (British) [EN-GB]" },
+        { "value": "EN-US", "label": "English (American) [EN-US]" },
+        { "value": "EO", "label": "Esperanto [EO]" },
+        { "value": "ET", "label": "Estonian [ET]" },
+        { "value": "FI", "label": "Finnish [FI]" },
+        { "value": "FR", "label": "French [FR]" },
+        { "value": "GL", "label": "Galician [GL]" },
+        { "value": "KA", "label": "Georgian [KA]" },
+        { "value": "DE", "label": "German [DE]" },
+        { "value": "GOM", "label": "Goan Konkani [GOM]" },
+        { "value": "EL", "label": "Greek [EL]" },
+        { "value": "GN", "label": "Guarani [GN]" },
+        { "value": "GU", "label": "Gujarati [GU]" },
+        { "value": "HT", "label": "Haitian Creole [HT]" },
+        { "value": "HA", "label": "Hausa [HA]" },
+        { "value": "HE", "label": "Hebrew [HE]" },
+        { "value": "HI", "label": "Hindi [HI]" },
+        { "value": "HU", "label": "Hungarian [HU]" },
+        { "value": "IS", "label": "Icelandic [IS]" },
+        { "value": "IG", "label": "Igbo [IG]" },
+        { "value": "ID", "label": "Indonesian [ID]" },
+        { "value": "GA", "label": "Irish [GA]" },
+        { "value": "IT", "label": "Italian [IT]" },
+        { "value": "JA", "label": "Japanese [JA]" },
+        { "value": "JV", "label": "Javanese [JV]" },
+        { "value": "KK", "label": "Kazakh [KK]" },
+        { "value": "KO", "label": "Korean [KO]" },
+        { "value": "CKB", "label": "Kurdish (Central) [CKB]" },
+        { "value": "KMR", "label": "Kurdish (Northern) [KMR]" },
+        { "value": "KY", "label": "Kyrgyz [KY]" },
+        { "value": "LA", "label": "Latin [LA]" },
+        { "value": "LV", "label": "Latvian [LV]" },
+        { "value": "LN", "label": "Lingala [LN]" },
+        { "value": "LT", "label": "Lithuanian [LT]" },
+        { "value": "LMO", "label": "Lombard [LMO]" },
+        { "value": "LB", "label": "Luxembourgish [LB]" },
+        { "value": "MK", "label": "Macedonian [MK]" },
+        { "value": "MAI", "label": "Maithili [MAI]" },
+        { "value": "MG", "label": "Malagasy [MG]" },
+        { "value": "MS", "label": "Malay [MS]" },
+        { "value": "ML", "label": "Malayalam [ML]" },
+        { "value": "MT", "label": "Maltese [MT]" },
+        { "value": "MI", "label": "Maori [MI]" },
+        { "value": "MR", "label": "Marathi [MR]" },
+        { "value": "MN", "label": "Mongolian [MN]" },
+        { "value": "NE", "label": "Nepali [NE]" },
+        { "value": "NB", "label": "Norwegian Bokmål [NB]" },
+        { "value": "OC", "label": "Occitan [OC]" },
+        { "value": "OM", "label": "Oromo [OM]" },
+        { "value": "PAM", "label": "Pampanga [PAM]" },
+        { "value": "PAG", "label": "Pangasinan [PAG]" },
+        { "value": "PS", "label": "Pashto [PS]" },
+        { "value": "FA", "label": "Persian [FA]" },
+        { "value": "PL", "label": "Polish [PL]" },
+        { "value": "PT-BR", "label": "Portuguese (Brazilian) [PT-BR]" },
+        { "value": "PT-PT", "label": "Portuguese (European) [PT-PT]" },
+        { "value": "PA", "label": "Punjabi [PA]" },
+        { "value": "QU", "label": "Quechua [QU]" },
+        { "value": "RO", "label": "Romanian [RO]" },
+        { "value": "RU", "label": "Russian [RU]" },
+        { "value": "SA", "label": "Sanskrit [SA]" },
+        { "value": "SR", "label": "Serbian [SR]" },
+        { "value": "SCN", "label": "Sicilian [SCN]" },
+        { "value": "SK", "label": "Slovak [SK]" },
+        { "value": "SL", "label": "Slovenian [SL]" },
+        { "value": "ST", "label": "Southern Sotho [ST]" },
+        { "value": "ES", "label": "Spanish [ES]" },
+        { "value": "ES-419", "label": "Spanish (Latin American) [ES-419]" },
+        { "value": "SU", "label": "Sundanese [SU]" },
+        { "value": "SW", "label": "Swahili [SW]" },
+        { "value": "SV", "label": "Swedish [SV]" },
+        { "value": "TL", "label": "Tagalog [TL]" },
+        { "value": "TG", "label": "Tajik [TG]" },
+        { "value": "TA", "label": "Tamil [TA]" },
+        { "value": "TT", "label": "Tatar [TT]" },
+        { "value": "TE", "label": "Telugu [TE]" },
+        { "value": "TH", "label": "Thai [TH]" },
+        { "value": "TS", "label": "Tsonga [TS]" },
+        { "value": "TN", "label": "Tswana [TN]" },
+        { "value": "TR", "label": "Turkish [TR]" },
+        { "value": "TK", "label": "Turkmen [TK]" },
+        { "value": "UK", "label": "Ukrainian [UK]" },
+        { "value": "UR", "label": "Urdu [UR]" },
+        { "value": "UZ", "label": "Uzbek [UZ]" },
+        { "value": "VI", "label": "Vietnamese [VI]" },
+        { "value": "CY", "label": "Welsh [CY]" },
+        { "value": "WO", "label": "Wolof [WO]" },
+        { "value": "XH", "label": "Xhosa [XH]" },
+        { "value": "YI", "label": "Yiddish [YI]" },
+        { "value": "ZU", "label": "Zulu [ZU]" }
       ],
-      "defaultValue": "EN"
+      "defaultValue": "EN-US"
     },
     {
       "name": "split_sentences",
@@ -303,7 +333,7 @@
       "description": "Whether the translated text should lean towards formal or informal language.",
       "type": "SELECT",
       "mandatory": false,
-      "visibilityCondition": "['DE', 'FR', 'IT', 'ES', 'NL', 'PL', 'PT-PT', 'PT-BR', 'RU'].includes(model.target_language)",
+      "visibilityCondition": "['AR', 'BG', 'CS', 'DA', 'DE', 'EL', 'EN-GB', 'EN-US', 'ES', 'ET', 'FI', 'FR', 'HE', 'HR', 'HU', 'ID', 'IT', 'JA', 'KO', 'LT', 'LV', 'NB', 'NL', 'PL', 'PT-BR', 'PT-PT', 'RO', 'RU', 'SK', 'SL', 'SV', 'TH', 'TR', 'UK', 'VI', 'ZH-HANS', 'ZH-HANT'].includes(model.target_language)",
       "selectChoices": [
         {
           "value": "default",

@@ -1,5 +1,10 @@
 # Changelog
 
+## [Version 1.1.0](https://github.com/dataiku/dss-plugin-deepl-translation/releases/tag/v1.1.0) - Support release - 2026-01
+
+- ✨ Support many more languages both as source and target of translations
+- ✨ Support python 3.12, 3.13 and 3.14
+
 ## [Version 1.0.2](https://github.com/dataiku/dss-plugin-deepl-translation/releases/tag/v1.0.2) - Support release - 2026-01
 
 - 👾 Fix API authentication after [DeepL's deprecation of query parameter and request body authentication](https://developers.deepl.com/docs/resources/breaking-changes-change-notices/november-2025-deprecation-of-legacy-auth-methods)
