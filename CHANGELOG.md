@@ -1,5 +1,9 @@
 # Changelog
 
+## [Version 1.1.1](https://github.com/dataiku/dss-plugin-nlp-deepl-translation/releases/tag/v1.1.1) - Documentation update - 2026-10
+
+- Update documentation links to the DSS reference documentation.
+
 ## [Version 1.1.0](https://github.com/dataiku/dss-plugin-deepl-translation/releases/tag/v1.1.0) - Support release - 2026-01
 
 - ✨ Support many more languages both as source and target of translations

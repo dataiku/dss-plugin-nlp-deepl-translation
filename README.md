@@ -4,7 +4,7 @@
 
 This Dataiku DSS plugin provides a recipe to translate a text column to another language with [DeepL](https://www.deepl.com/en/translator).
 
-Documentation: https://www.dataiku.com/product/plugins/nlp-deepl-translation/
+Documentation: https://doc.dataiku.com/dss/latest/nlp/deepl-translation.html
 
 ## Release notes
 
